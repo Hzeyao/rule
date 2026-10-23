@@ -57,6 +57,13 @@
         "action": "route",
         "server": "local"
 			},
+			{
+        "domain": [
+          "lancache.steamcontent.com"
+        ],
+        "action": "route",
+        "server": "local"
+      },
       {
       	"rule_set": [
           "geosite-dnsblock",
@@ -185,12 +192,23 @@
                     "rule_set": "gfwlist-custom-domains",
                     "invert": true
                   },
-                  {
-										"rule_set": [
-											"geosite-geolocation-cn",
-											"ext-cn-domain"
-										]
-  								}
+									{
+                    "type": "logical",
+                    "mode": "or",
+                    "rules": [
+                      {
+                        "rule_set": [
+													"geosite-geolocation-cn",
+													"ext-cn-domain"
+												]
+                      },
+                      {
+                        "domain_suffix": [
+                          "steamcontent.com"
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -249,12 +267,23 @@
                 "rule_set": ["microsoft-cn", "geosite-jetbrains@cn", "gfwlist-custom-domains", "apple", "apple-cn", "apple-proxy"],
                 "invert": true
               },
-              {
-								"rule_set": [
-									"geosite-geolocation-cn",
-									"ext-cn-domain"
+							{
+								"type": "logical",
+								"mode": "or",
+								"rules": [
+									{
+										"rule_set": [
+											"geosite-geolocation-cn",
+											"ext-cn-domain"
+										]
+									},
+									{
+										"domain_suffix": [
+											"steamcontent.com"
+										]
+									}
 								]
-              }
+							}
             ]
           }
         ],
@@ -710,6 +739,11 @@
 									"geosite-geolocation-cn",
 									"ext-cn-domain"
 								]
+              },
+							{
+                "domain_suffix": [
+                  "steamcontent.com"
+                ]
               },
               {
                 "ip_is_private": true
