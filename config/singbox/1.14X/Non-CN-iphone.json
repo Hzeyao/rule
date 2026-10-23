@@ -506,6 +506,16 @@
         "action": "hijack-dns"
       },
 			{
+        "network": "udp",
+        "port": 443,
+        "domain": [
+          "gateway.icloud.com"
+        ],
+        "action": "reject",
+        "method": "default",
+        "no_drop": true
+      },
+			{
 				"type": "logical",
 				"mode": "or",
 				"rules": [
