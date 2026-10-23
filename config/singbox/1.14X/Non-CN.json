@@ -1,5 +1,5 @@
 {
-	"$schema": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/Hzeyao/rule/refs/heads/main/config/singbox/schema.json",
+  "$schema": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/Hzeyao/rule/refs/heads/main/config/singbox/schema.json",
   "log": {
     "level": "info",
     "timestamp": true
@@ -28,36 +28,36 @@
       }
     ],
     "rules": [
-    	{
+      {
         "preferred_by": "local",
         "action": "route",
         "server": "local"
       },
       {
-				"type": "logical",
-				"mode": "or",
-				"rules": [
-					{
-						"domain": [
-							"localhost"
-						],
-						"domain_suffix": [
-							".local",
-							".lan",
-							".localdomain",
-							".home.arpa",
-							".internal",
-							".intranet"
-						]
-					},
-					{
-						"rule_set": "private"
-					}
-				],
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain": [
+              "localhost"
+            ],
+            "domain_suffix": [
+              ".local",
+              ".lan",
+              ".localdomain",
+              ".home.arpa",
+              ".internal",
+              ".intranet"
+            ]
+          },
+          {
+            "rule_set": "private"
+          }
+        ],
         "action": "route",
         "server": "local"
-			},
-		  {
+      },
+      {
         "domain": [
           "lancache.steamcontent.com"
         ],
@@ -65,7 +65,7 @@
         "server": "local"
       },
       {
-      	"rule_set": [
+        "rule_set": [
           "geosite-dnsblock",
           "adrules"
         ],
@@ -92,17 +92,21 @@
                 "invert": true
               },
               {
-              	"rule_set": [
-                	"custom-direct-domains",
-                	"geosite-wise",
-									"apple",
-									"apple-cn",
-									"apple-proxy"
+                "rule_set": [
+                  "custom-direct-domains",
+                  "geosite-wise",
+                  "apple",
+                  "apple-cn",
+                  "apple-proxy"
                 ],
                 "invert": true
               },
               {
-                "rule_set": ["microsoft-cn", "geosite-jetbrains@cn", "gfwlist-custom-domains"]
+                "rule_set": [
+                  "microsoft-cn",
+                  "geosite-jetbrains@cn",
+                  "gfwlist-custom-domains"
+                ]
               }
             ]
           }
@@ -119,17 +123,21 @@
             "invert": true
           },
           {
-						"rule_set": [
-							"custom-direct-domains",
-							"geosite-wise",
-							"apple",
-							"apple-cn",
-							"apple-proxy"
-						],
+            "rule_set": [
+              "custom-direct-domains",
+              "geosite-wise",
+              "apple",
+              "apple-cn",
+              "apple-proxy"
+            ],
             "invert": true
           },
           {
-            "rule_set": ["microsoft-cn", "geosite-jetbrains@cn", "gfwlist-custom-domains"]
+            "rule_set": [
+              "microsoft-cn",
+              "geosite-jetbrains@cn",
+              "gfwlist-custom-domains"
+            ]
           }
         ],
         "action": "route",
@@ -164,13 +172,13 @@
                     "invert": true
                   },
                   {
-										"rule_set": [
-											"custom-direct-domains",
-											"geosite-wise",
-											"apple",
-											"apple-cn",
-											"apple-proxy"
-										]
+                    "rule_set": [
+                      "custom-direct-domains",
+                      "geosite-wise",
+                      "apple",
+                      "apple-cn",
+                      "apple-proxy"
+                    ]
                   }
                 ]
               },
@@ -201,15 +209,15 @@
                     "rule_set": "gfwlist-custom-domains",
                     "invert": true
                   },
-									{
+                  {
                     "type": "logical",
                     "mode": "or",
                     "rules": [
                       {
                         "rule_set": [
-													"geosite-geolocation-cn",
-													"ext-cn-domain"
-												]
+                          "geosite-geolocation-cn",
+                          "ext-cn-domain"
+                        ]
                       },
                       {
                         "domain_suffix": [
@@ -243,11 +251,11 @@
               },
               {
                 "rule_set": [
-                	"custom-direct-domains",
-                	"geosite-wise",
-									"apple",
-									"apple-cn",
-									"apple-proxy"
+                  "custom-direct-domains",
+                  "geosite-wise",
+                  "apple",
+                  "apple-cn",
+                  "apple-proxy"
                 ]
               }
             ]
@@ -276,26 +284,30 @@
                 "clash_mode": "Non-CN"
               },
               {
-                "rule_set": ["microsoft-cn", "geosite-jetbrains@cn", "gfwlist-custom-domains"],
+                "rule_set": [
+                  "microsoft-cn",
+                  "geosite-jetbrains@cn",
+                  "gfwlist-custom-domains"
+                ],
                 "invert": true
               },
-							{
-								"type": "logical",
-								"mode": "or",
-								"rules": [
-									{
-										"rule_set": [
-											"geosite-geolocation-cn",
-											"ext-cn-domain"
-										]
-									},
-									{
-										"domain_suffix": [
-											"steamcontent.com"
-										]
-									}
-								]
-							}
+              {
+                "type": "logical",
+                "mode": "or",
+                "rules": [
+                  {
+                    "rule_set": [
+                      "geosite-geolocation-cn",
+                      "ext-cn-domain"
+                    ]
+                  },
+                  {
+                    "domain_suffix": [
+                      "steamcontent.com"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -316,8 +328,8 @@
             ]
           },
           {
-          	"rule_set": "geosite-geolocation-!cn",
-          	"invert": true
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
           }
         ],
         "action": "evaluate",
@@ -355,14 +367,14 @@
         "rcode": "NOERROR",
         "race": true
       },
-			{
-				"match_response": "local-answer",
-				"response_rcode": "NOERROR",
-				"rule_set": "geoip-cn",
-				"action": "route",
-				"server": "local",
-				"race": true
-			},
+      {
+        "match_response": "local-answer",
+        "response_rcode": "NOERROR",
+        "rule_set": "geoip-cn",
+        "action": "route",
+        "server": "local",
+        "race": true
+      },
       {
         "query_type": [
           "AAAA",
@@ -374,11 +386,11 @@
       }
     ],
     "final": "remote",
-    "strategy": "ipv4_only", 
+    "strategy": "ipv4_only",
     "cache_capacity": 8192,
     "optimistic": {
-    	"enabled": true,
-    	"timeout": "1h"
+      "enabled": true,
+      "timeout": "1h"
     },
     "reverse_mapping": true
   },
@@ -389,7 +401,7 @@
     }
   ],
   "inbounds": [
-  	{
+    {
       "tag": "tun-in",
       "type": "tun",
       "address": [
@@ -414,11 +426,13 @@
     }
   ],
   "outbounds": [
-  	{
+    {
       "type": "selector",
       "tag": "proxy",
-			"interrupt_exist_connections": true,
-      "outbounds": ["auto"]
+      "interrupt_exist_connections": true,
+      "outbounds": [
+        "auto"
+      ]
     },
     {
       "type": "urltest",
@@ -429,29 +443,99 @@
       "tolerance": 50,
       "idle_timeout": "30m"
     },
-    {"tag": "Goolge", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Youtube", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Speedtest", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "AI", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Telegram", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Pikpak", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "HK", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Viu", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Twitch", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Netflix", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Tiktok", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Microsoft", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "Download", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-    {"tag": "US", "type": "selector", "interrupt_exist_connections": true, "outbounds": []},
-  	{
+    {
+      "tag": "Goolge",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Youtube",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Speedtest",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "AI",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Telegram",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Pikpak",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "HK",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Viu",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Twitch",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Netflix",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Tiktok",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Microsoft",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Download",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "US",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "direct",
       "tag": "direct",
       "domain_resolver": "local"
     }
-	],
-	"route": {
-		"rules": [
-			{
+  ],
+  "route": {
+    "rules": [
+      {
         "type": "logical",
         "mode": "and",
         "rules": [
@@ -511,27 +595,27 @@
         "no_drop": true
       },
       {
-      	"type": "logical",
-      	"mode": "or",
-      	"rules": [
-      		{
-      			"domain_suffix": "push.apple.com"
-      		},
-      		{
-      			"rule_set": "geoip-telegram"
-      		}
-      	],
-      	"invert": true,
-      	"action": "sniff",
-      	"sniffer": [
-      		"http",
-      		"tls",
-      		"stun",
-      		"quic",
-      		"dns",
-      		"bittorrent"
-      	],
-      	"timeout": "200ms"
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain_suffix": "push.apple.com"
+          },
+          {
+            "rule_set": "geoip-telegram"
+          }
+        ],
+        "invert": true,
+        "action": "sniff",
+        "sniffer": [
+          "http",
+          "tls",
+          "stun",
+          "quic",
+          "dns",
+          "bittorrent"
+        ],
+        "timeout": "200ms"
       },
       {
         "type": "logical",
@@ -546,7 +630,7 @@
         ],
         "action": "hijack-dns"
       },
-			{
+      {
         "network": "udp",
         "port": 443,
         "domain": [
@@ -556,37 +640,37 @@
         "method": "default",
         "no_drop": true
       },
-			{
-				"type": "logical",
-				"mode": "or",
-				"rules": [
-					{
-						"domain": [
-							"localhost"
-						],
-						"domain_suffix": [
-							".local",
-							".lan",
-							".localdomain",
-							".home.arpa",
-							".internal",
-							".intranet"
-						]
-					},
-					{
-						"rule_set": "private"
-					}
-				],
-				"action": "route",
-				"outbound": "direct"
-			},
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "domain": [
+              "localhost"
+            ],
+            "domain_suffix": [
+              ".local",
+              ".lan",
+              ".localdomain",
+              ".home.arpa",
+              ".internal",
+              ".intranet"
+            ]
+          },
+          {
+            "rule_set": "private"
+          }
+        ],
+        "action": "route",
+        "outbound": "direct"
+      },
       {
         "ip_is_private": true,
         "action": "route",
         "outbound": "direct"
       },
       {
-      	"rule_set": [
+        "rule_set": [
           "adrules",
           "geosite-dnsblock"
         ],
@@ -594,21 +678,21 @@
         "method": "default",
         "no_drop": true
       },
-			{
-				"type": "logical",
-				"mode": "or",
-				"rules": [
-					{
-						"port": 853
-					},
-					{
-						"protocol": "quic"
-					}
-				],
-				"action": "reject",
-				"no_drop": true
-			},
-			{
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "protocol": "quic"
+          }
+        ],
+        "action": "reject",
+        "no_drop": true
+      },
+      {
         "clash_mode": "Direct",
         "action": "route",
         "outbound": "direct"
@@ -626,9 +710,9 @@
               "custom-direct-domains",
               "custom-direct-ips",
               "geosite-wise",
-							"apple",
-							"apple-cn",
-							"apple-proxy"
+              "apple",
+              "apple-cn",
+              "apple-proxy"
             ]
           }
         ],
@@ -636,79 +720,102 @@
         "outbound": "direct"
       },
       {
-      	"protocol": "bittorrent",
-      	"action": "route",
-      	"outbound": "Download"
+        "protocol": "bittorrent",
+        "action": "route",
+        "outbound": "Download"
       },
       {
-      	"rule_set": ["ai", "jetbrains-ai", "jetbrains", "geosite-jetbrains@cn"],
-      	"action": "route",
-      	"outbound": "AI"
+        "rule_set": [
+          "ai",
+          "jetbrains-ai",
+          "jetbrains",
+          "geosite-jetbrains@cn"
+        ],
+        "action": "route",
+        "outbound": "AI"
       },
       {
-      	"rule_set": "pikpak",
-      	"action": "route",
-      	"outbound": "Pikpak"
+        "rule_set": "pikpak",
+        "action": "route",
+        "outbound": "Pikpak"
       },
       {
-      	"rule_set": "speedtest",
-      	"action": "route",
-      	"outbound": "Speedtest"
+        "rule_set": "speedtest",
+        "action": "route",
+        "outbound": "Speedtest"
       },
       {
-      	"rule_set": [
-      		"bahamut",
-      		"crypto",
-      		"geosite-nodeseek",
-      		"geosite-linuxdo"
-      	],
-      	"action": "route",
-      	"outbound": "HK"
+        "rule_set": [
+          "bahamut",
+          "crypto",
+          "geosite-nodeseek",
+          "geosite-linuxdo"
+        ],
+        "action": "route",
+        "outbound": "HK"
       },
       {
-      	"rule_set": ["telegram", "geoip-telegram"],
-      	"action": "route",
-      	"outbound": "Telegram"
+        "rule_set": [
+          "telegram",
+          "geoip-telegram"
+        ],
+        "action": "route",
+        "outbound": "Telegram"
       },
       {
-      	"rule_set": ["ViuTV", "viu"],
-      	"action": "route",
-      	"outbound": "Viu"
+        "rule_set": [
+          "ViuTV",
+          "viu"
+        ],
+        "action": "route",
+        "outbound": "Viu"
       },
       {
-      	"rule_set": "twitch",
-      	"action": "route",
-      	"outbound": "Twitch"
+        "rule_set": "twitch",
+        "action": "route",
+        "outbound": "Twitch"
       },
       {
-      	"rule_set": "youtube",
-      	"action": "route",
-      	"outbound": "Youtube"
+        "rule_set": "youtube",
+        "action": "route",
+        "outbound": "Youtube"
       },
       {
-      	"rule_set": "netflix",
-      	"action": "route",
-      	"outbound": "Netflix"
+        "rule_set": "netflix",
+        "action": "route",
+        "outbound": "Netflix"
       },
       {
-      	"rule_set": "tiktok",
-      	"action": "route",
-      	"outbound": "Tiktok"
+        "rule_set": "tiktok",
+        "action": "route",
+        "outbound": "Tiktok"
       },
       {
-      	"rule_set": ["microsoft", "MicrosoftEdge", "microsoft-cn"],
-      	"action": "route",
-      	"outbound": "Microsoft"
+        "rule_set": [
+          "microsoft",
+          "MicrosoftEdge",
+          "microsoft-cn"
+        ],
+        "action": "route",
+        "outbound": "Microsoft"
       },
       {
-      	"rule_set": ["google", "googlefcm", "paypal"],
-      	"action": "route",
-      	"outbound": "Goolge"
+        "rule_set": [
+          "google",
+          "googlefcm",
+          "paypal"
+        ],
+        "action": "route",
+        "outbound": "Goolge"
       },
       {
-      	"rule_set": ["ecommerce", "socialmedia", "forum"],
-      	"action": "route",
-      	"outbound": "US"
+        "rule_set": [
+          "ecommerce",
+          "socialmedia",
+          "forum"
+        ],
+        "action": "route",
+        "outbound": "US"
       },
       {
         "rule_set": [
@@ -750,12 +857,12 @@
             "mode": "or",
             "rules": [
               {
-								"rule_set": [
-									"geosite-geolocation-cn",
-									"ext-cn-domain"
-								]
+                "rule_set": [
+                  "geosite-geolocation-cn",
+                  "ext-cn-domain"
+                ]
               },
-							{
+              {
                 "domain_suffix": [
                   "steamcontent.com"
                 ]
@@ -777,88 +884,98 @@
         "action": "route",
         "outbound": "proxy"
       }
-		],
-		"rule_set": [
+    ],
+    "rule_set": [
       {
-      	"tag": [
-      		"geosite-geolocation-cn",
-      		"geosite-geolocation-!cn",
-      		"geosite-wise",
-      		"geosite-nodeseek",
-      		"geosite-linuxdo",
-      		"geosite-jetbrains@cn"
-      	],
+        "tag": [
+          "geosite-geolocation-cn",
+          "geosite-geolocation-!cn",
+          "geosite-wise",
+          "geosite-nodeseek",
+          "geosite-linuxdo",
+          "geosite-jetbrains@cn"
+        ],
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/{tag}.srs",
         "update_interval": "1d"
       },
       {
-      	"tag": [
-      		"private", 
-      		"gfw", 
-      		"adrules", 
-      		"ai", 
-      		"speedtest", 
-      		"bahamut", 
-      		"crypto", 
-      		"youtube", 
-      		"netflix", 
-      		"google", 
-      		"googlefcm",
-      		"paypal",
-      		"tiktok",
-      		"microsoft",
-      		"microsoft-cn",
-      		"socialmedia",
-      		"ecommerce",
-      		"forum",
-      		"apple-proxy",
-      		"apple",
-      		"apple-cn"
-      	],
+        "tag": [
+          "private",
+          "gfw",
+          "adrules",
+          "ai",
+          "speedtest",
+          "bahamut",
+          "crypto",
+          "youtube",
+          "netflix",
+          "google",
+          "googlefcm",
+          "paypal",
+          "tiktok",
+          "microsoft",
+          "microsoft-cn",
+          "socialmedia",
+          "ecommerce",
+          "forum",
+          "apple-proxy",
+          "apple",
+          "apple-cn"
+        ],
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/singbox/version5/{tag}.srs",
         "update_interval": "1d"
       },
       {
-      	"tag": ["pikpak", "telegram", "viu", "twitch", "jetbrains", "jetbrains-ai"],
+        "tag": [
+          "pikpak",
+          "telegram",
+          "viu",
+          "twitch",
+          "jetbrains",
+          "jetbrains-ai"
+        ],
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geosite/{tag}.srs",
         "update_interval": "1d"
       },
       {
-      	"tag": "geoip-cn",
+        "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
         "update_interval": "1d"
       },
       {
-      	"tag": "geoip-telegram",
+        "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geoip/telegram.srs",
         "update_interval": "1d"
       },
-			{
-				"tag": "ext-cn-domain",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.srs",
-				"update_interval": "1d"
-			},
-			{
-				"tag": "geosite-dnsblock",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://raw.githubusercontent.com/tmby/sing-box-dns-filter/refs/heads/main/geosite-dnsblock.srs",
-				"update_interval": "1d"
-			},
-			{
-      	"tag": ["ViuTV", "MicrosoftEdge"],
+      {
+        "tag": "ext-cn-domain",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.srs",
+        "update_interval": "1d"
+      },
+      {
+        "tag": "geosite-dnsblock",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/tmby/sing-box-dns-filter/refs/heads/main/geosite-dnsblock.srs",
+        "update_interval": "1d"
+      },
+      {
+        "tag": [
+          "ViuTV",
+          "MicrosoftEdge"
+        ],
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/{tag}/{tag}.srs",
@@ -912,11 +1029,11 @@
         ]
       }
     ],
-		"final": "proxy",
-		"auto_detect_interface": true,
-		"default_http_client": "rule-set-download",
-		"default_domain_resolver": "local"
-	},
+    "final": "proxy",
+    "auto_detect_interface": true,
+    "default_http_client": "rule-set-download",
+    "default_domain_resolver": "local"
+  },
   "experimental": {
     "cache_file": {
       "enabled": true
