@@ -993,7 +993,9 @@
         "rules": [
           {
             "domain_suffix": [
-              "hizeyao.com"
+              "hizeyao.com",
+              "gstatic.com",
+              "googleapis.com"
             ]
           }
         ]
