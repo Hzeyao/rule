@@ -528,6 +528,12 @@
       "outbounds": []
     },
     {
+      "tag": "JP",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
       "type": "direct",
       "tag": "direct",
       "domain_resolver": "local"
@@ -823,7 +829,7 @@
           "gfwlist-custom-ips"
         ],
         "action": "route",
-        "outbound": "proxy"
+        "outbound": "JP"
       },
       {
         "type": "logical",
