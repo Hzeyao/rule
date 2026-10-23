@@ -994,7 +994,8 @@
           {
             "domain_suffix": [
               "hizeyao.com",
-              "gstatic.com"
+              "gstatic.com",
+              "googleapis.com"
             ]
           }
         ]
