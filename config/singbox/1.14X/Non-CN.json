@@ -444,7 +444,7 @@
       "idle_timeout": "30m"
     },
     {
-      "tag": "Goolge",
+      "tag": "Google",
       "type": "selector",
       "interrupt_exist_connections": true,
       "outbounds": []
@@ -812,7 +812,7 @@
           "paypal"
         ],
         "action": "route",
-        "outbound": "Goolge"
+        "outbound": "Google"
       },
       {
         "rule_set": [
