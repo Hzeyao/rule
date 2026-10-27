@@ -800,7 +800,8 @@
         "rule_set": [
           "microsoft",
           "MicrosoftEdge",
-          "microsoft-cn"
+          "microsoft-cn",
+          "onedrive"
         ],
         "action": "route",
         "outbound": "Microsoft"
@@ -928,7 +929,8 @@
           "forum",
           "apple-proxy",
           "apple",
-          "apple-cn"
+          "apple-cn",
+          "onedrive"
         ],
         "type": "remote",
         "format": "binary",
