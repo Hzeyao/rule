@@ -456,12 +456,6 @@
       "outbounds": []
     },
     {
-      "tag": "Speedtest",
-      "type": "selector",
-      "interrupt_exist_connections": true,
-      "outbounds": []
-    },
-    {
       "tag": "AI",
       "type": "selector",
       "interrupt_exist_connections": true,
@@ -475,12 +469,6 @@
     },
     {
       "tag": "Pikpak",
-      "type": "selector",
-      "interrupt_exist_connections": true,
-      "outbounds": []
-    },
-    {
-      "tag": "Viu",
       "type": "selector",
       "interrupt_exist_connections": true,
       "outbounds": []
@@ -511,6 +499,18 @@
     },
     {
       "tag": "Download",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Speedtest",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "Viu",
       "type": "selector",
       "interrupt_exist_connections": true,
       "outbounds": []
