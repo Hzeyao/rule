@@ -431,12 +431,12 @@
       "tag": "proxy",
       "interrupt_exist_connections": true,
       "outbounds": [
-        "auto"
+        "Auto"
       ]
     },
     {
       "type": "urltest",
-      "tag": "auto",
+      "tag": "Auto",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -480,12 +480,6 @@
       "outbounds": []
     },
     {
-      "tag": "HK",
-      "type": "selector",
-      "interrupt_exist_connections": true,
-      "outbounds": []
-    },
-    {
       "tag": "Viu",
       "type": "selector",
       "interrupt_exist_connections": true,
@@ -517,6 +511,12 @@
     },
     {
       "tag": "Download",
+      "type": "selector",
+      "interrupt_exist_connections": true,
+      "outbounds": []
+    },
+    {
+      "tag": "HK",
       "type": "selector",
       "interrupt_exist_connections": true,
       "outbounds": []
