@@ -819,7 +819,8 @@
         "rule_set": [
           "ecommerce",
           "socialmedia",
-          "forum"
+          "forum",
+          "gits"
         ],
         "action": "route",
         "outbound": "US"
@@ -930,7 +931,8 @@
           "apple-proxy",
           "apple",
           "apple-cn",
-          "onedrive"
+          "onedrive",
+          "gits"
         ],
         "type": "remote",
         "format": "binary",
