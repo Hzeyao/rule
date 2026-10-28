@@ -364,16 +364,14 @@
           }
         ],
         "action": "predefined",
-        "rcode": "NOERROR",
-        "race": true
+        "rcode": "NOERROR"
       },
       {
         "match_response": "local-answer",
         "response_rcode": "NOERROR",
         "rule_set": "geoip-cn",
         "action": "route",
-        "server": "local",
-        "race": true
+        "server": "local"
       },
       {
         "query_type": [
