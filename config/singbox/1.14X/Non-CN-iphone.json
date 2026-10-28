@@ -371,7 +371,8 @@
         "response_rcode": "NOERROR",
         "rule_set": "geoip-cn",
         "action": "route",
-        "server": "local"
+        "server": "local",
+        "race": true
       },
       {
         "query_type": [
