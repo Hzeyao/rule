@@ -364,7 +364,8 @@
           }
         ],
         "action": "predefined",
-        "rcode": "NOERROR"
+        "rcode": "NOERROR",
+        "race": true
       },
       {
         "match_response": "local-answer",
