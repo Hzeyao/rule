@@ -995,8 +995,8 @@
         "tag": "PO0",
         "type": "remote",
         "format": "binary",
-        "url": "https://broad-cloud-d6af.hzyyyy515.workers.dev/",
-        "update_interval": "10s"
+        "url": "https://broad-cloud-d6af.hzyyyy515.workers.dev",
+        "update_interval": "5s"
       },
       {
         "type": "inline",
