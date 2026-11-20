@@ -994,7 +994,7 @@
       {
         "tag": "PO0",
         "type": "remote",
-        "format": "binary",
+        "format": "source",
         "url": "https://po0.himantou.com",
         "update_interval": "5s"
       },
