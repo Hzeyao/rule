@@ -992,6 +992,13 @@
         "update_interval": "1d"
       },
       {
+        "tag": "PO0",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://broad-cloud-d6af.hzyyyy515.workers.dev/",
+        "update_interval": "10s"
+      },
+      {
         "type": "inline",
         "tag": "gfwlist-custom-domains",
         "rules": [
