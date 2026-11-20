@@ -995,7 +995,7 @@
         "tag": "PO0",
         "type": "remote",
         "format": "binary",
-        "url": "https://broad-cloud-d6af.hzyyyy515.workers.dev",
+        "url": "https://po0.himantou.com",
         "update_interval": "5s"
       },
       {
