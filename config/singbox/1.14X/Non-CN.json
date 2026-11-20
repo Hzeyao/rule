@@ -992,13 +992,6 @@
         "update_interval": "1d"
       },
       {
-        "tag": "PO0",
-        "type": "remote",
-        "format": "source",
-        "url": "https://po0.himantou.com",
-        "update_interval": "5s"
-      },
-      {
         "type": "inline",
         "tag": "gfwlist-custom-domains",
         "rules": [
