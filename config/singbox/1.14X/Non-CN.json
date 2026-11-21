@@ -1022,7 +1022,8 @@
         "rules": [
           {
             "domain_suffix": [
-              "tello.com"
+              "tello.com",
+              "console.po0.io"
             ]
           }
         ]
