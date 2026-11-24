@@ -1,5 +1,5 @@
 {
-  "$schema": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/Hzeyao/rule/refs/heads/main/config/singbox/schema.json",
+  "$schema": "https://ghgc.himantou.com/https://raw.githubusercontent.com/Hzeyao/rule/refs/heads/main/config/singbox/schema.json",
   "log": {
     "level": "info",
     "timestamp": true
@@ -905,7 +905,7 @@
         ],
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/{tag}.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/{tag}.srs",
         "update_interval": "1d"
       },
       {
@@ -936,7 +936,7 @@
         ],
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/singbox/version5/{tag}.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/QuixoticHeart/rule-set/refs/heads/ruleset/singbox/version5/{tag}.srs",
         "update_interval": "1d"
       },
       {
@@ -950,35 +950,35 @@
         ],
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geosite/{tag}.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geosite/{tag}.srs",
         "update_interval": "1d"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
         "update_interval": "1d"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geoip/telegram.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/bgpeer/rules/refs/heads/main/geo/geoip/telegram.srs",
         "update_interval": "1d"
       },
       {
         "tag": "ext-cn-domain",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/xmdhs/cn-domain-list/rule-set/ext-cn-list.srs",
         "update_interval": "1d"
       },
       {
         "tag": "geosite-dnsblock",
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/tmby/sing-box-dns-filter/refs/heads/main/geosite-dnsblock.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/tmby/sing-box-dns-filter/refs/heads/main/geosite-dnsblock.srs",
         "update_interval": "1d"
       },
       {
@@ -988,7 +988,7 @@
         ],
         "type": "remote",
         "format": "binary",
-        "url": "https://ghgc.hizeyao.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/{tag}/{tag}.srs",
+        "url": "https://ghgc.himantou.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/{tag}/{tag}.srs",
         "update_interval": "1d"
       },
       {
