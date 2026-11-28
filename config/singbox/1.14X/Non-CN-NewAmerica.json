@@ -836,7 +836,8 @@
               {
                 "rule_set": [
                   "geosite-geolocation-cn",
-                  "ext-cn-domain"
+                  "ext-cn-domain",
+                  "tencent"
                 ]
               },
               {
@@ -907,7 +908,8 @@
         "tag": [
           "telegram",
           "jetbrains",
-          "jetbrains-ai"
+          "jetbrains-ai",
+          "tencent"
         ],
         "type": "remote",
         "format": "binary",
