@@ -387,7 +387,7 @@
     ],
     "final": "remote",
     "strategy": "ipv4_only",
-    "cache_capacity": 8192,
+    "cache_capacity": 1024,
     "optimistic": {
       "enabled": true,
       "timeout": "1h"
@@ -1060,6 +1060,6 @@
     }
   },
   "certificate": {
-    "store": "chrome"
+    "store": "system"
   }
 }
