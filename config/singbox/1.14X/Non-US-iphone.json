@@ -1047,6 +1047,7 @@
       }
     ],
     "final": "proxy",
+    "find_process": true,
     "auto_detect_interface": true,
     "default_http_client": "rule-set-download",
     "default_domain_resolver": "local"
